@@ -43,17 +43,24 @@
 	easing: easeOutQuad; 
 	loop: true">
 ></a-sphere>
-<a-text
-></a-text>
 
+<a-entity id="jumbotron"position="-150 150 -150">
 <a-box
 position="-150 150 -150"
 width="40"
 height="20"
 depth="40"
 color="black"
-animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear"
 ></a-box>
+<a-text 
+value="" 
+position="0 0.4 0.26"  <!-- relative to box -->
+rotation="0 0 0"
+align="center"
+color="yellow" 
+width="4">
+</a-text>
+
 
     </a-scene>
   </body>
