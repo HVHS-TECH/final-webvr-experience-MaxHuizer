@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    </head>
+  <head>
+
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+  </head>
     <body>
-        <a-scene>
-            <!--
-            Photo Credit: Thanks to
-            -->
-            <a-sky color="lightblue"></a-sky>
-            
-            <a-box position="0 0 -4" rotation="0 45 0"></a-box>
-            
-    </body>
+    <a-scene>    
+    
+      <a-entity 
+      ply-model="src:nbacourt.ply"
+      position="0 0 0"
+      rotation="270 90 0"
+      scale="20 20 20"
+      ></a-entity>
+
+			<a-entity
+      ply-model="src:stephcurry.ply"
+      position="-160 22 -80"
+      rotation="270 0 0"
+      scale="10 10 10"
+      ></a-entity>
+
+      <a-camera position="-125 75 -80"></a-camera>
+
+			<a-sky src="#celebration"></a-sky>
+
+<a-assets>
+  <img id="celebration" src="KBYG_2022-23_Warriors_Games.png">
+</a-assets>
+
+<a-sphere 
+  position="-115 42 -150"
+  radius="2" 
+  color="orange"
+	animation="property: position; 
+	to: -115 60 -150; 
+	dir: alternate; 
+	dur: 500; 
+	easing: easeOutQuad; 
+	loop: true">
+</a-sphere>
+
+    </a-scene>
+  </body>
 </html>
-
-
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
-    <a-scene
-
-    ><a-entity>
-    ply-model="src:Warriors NBA stadium.ply"
-    position="0 1 -2"
-    rotation="-90 0 90"
-        scale="1 1 1"
-    ></a-entity>
-    ></a-scene>
