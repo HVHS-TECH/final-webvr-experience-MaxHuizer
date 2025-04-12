@@ -44,24 +44,26 @@
 	loop: true">
 ></a-sphere>
 
-<a-entity id="jumbotron"position="-150 150 -150">
-<a-box
-position="-150 150 -150"
-width="40"
-height="20"
-depth="40"
-color="black"
-></a-box>
-<a-text 
-value="" 
-position="0 0.4 0.26"  <!-- relative to box -->
-rotation="0 0 0"
-align="center"
-color="yellow" 
-width="4">
-</a-text>
+<a-entity id="jumbotron" position="-150 150 -150" rotation="0 0 0">
 
+  <!-- The box (jumbotron body) -->
+  <a-box 
+    width="40" 
+    height="20" 
+    depth="40" 
+    color="black">
+  </a-box>
 
+  <!-- Text attached to the front of the box -->
+  <a-text>
+    value="121-118" 
+    position="-150 150 -150"
+    rotation="0 0 0"
+    align="center"
+    color="yellow" 
+    width="100">
+  </a-text>
+</a-entity>
     </a-scene>
   </body>
 </html>
