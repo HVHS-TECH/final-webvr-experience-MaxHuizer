@@ -17,11 +17,6 @@
     height="1000"
     ></a-plane>
 
-    <a-box position="0 0.5 -5" depth="10" height="10" width="10" color="#555"></a-box>
-    <a-box position="1 0.5 -5" depth="10" height="10" width="10" color="#555"></a-box>
-    <a-box position="2 0.5 -5" depth="10" height="10" width="10" color="#555"></a-box>
-
-
     <a-light type="ambient" color="#ffffff"></a-light>
 
     <a-light type="spot" color="#0022ff" intensity="2" angle="30"
@@ -56,8 +51,8 @@
 
 			<a-entity
       ply-model="src:stephcurry.ply"
-      position="-35 -17 0"
-      rotation="270 0 0"
+      position="-35 -17 -45"
+      rotation="270 270 0"
       scale="10 10 10"
       ></a-entity>
       
@@ -73,7 +68,7 @@
 	loop: true"
   ></a-sphere>
 
-  <a-camera position="0 25 0"
+  <a-camera position="0 25 40"
   wasd-controls="acceleration: 300"
   look-controls="pointerLockEnabled: true"
   ></a-camera>
