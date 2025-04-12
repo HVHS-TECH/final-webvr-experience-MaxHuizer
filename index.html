@@ -8,7 +8,14 @@
 
   </head>
     <body>
-    <a-scene>    
+    <a-scene> 
+    <a-plane
+    position="0 0 0"
+    rotation="-90 0 0"
+    width="1000"
+    height="1000"
+    ></a-plane>
+
     <a-sky
     color="lightblue"
     ></a-sky>
@@ -25,7 +32,7 @@
       rotation="270 0 0"
       scale="10 10 10"
       ></a-entity>
-
+      
       <a-sphere
   position="-115 54 -150"
   radius="4" 
@@ -33,27 +40,14 @@
 	animation="property: position; 
 	to: -115 65 -150; 
 	dir: alternate; 
-	dur: 500; 
+	dur: 250; 
 	easing: easeOutQuad; 
 	loop: true"
   ></a-sphere>
+
+    
+  <a-camera position="-150 100 -50"></a-camera>
   
-      ></a-entity>
-
-      <a-camera position="-150 100 -50"></a-camera>
-
-<a-sphere
-  position="-115 54 -150"
-  radius="4" 
-  color="orange"
-	animation="property: position; 
-	to: -115 65 -150; 
-	dir: alternate; 
-	dur: 500; 
-	easing: easeOutQuad; 
-	loop: true">
-></a-sphere>
-
 <a-entity id="jumbotron" position="-150 150 -150" rotation="0 0 0"animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"
 >
     <a-box
