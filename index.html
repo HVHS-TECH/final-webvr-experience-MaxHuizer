@@ -56,36 +56,19 @@
       scale="10 10 10"
       ></a-entity>
       
-      <a-sphere
-  position="-10 4 -10"
-  radius="4" 
-  color="orange"
-	animation="property: position; 
-	to: -10 15 -10; 
-	dir: alternate; 
-	dur: 250; 
-	easing: easeOutQuad; 
-	loop: true"
-  ></a-sphere>
 
-  <a-entity
-  <a-camera position="0 25 40"
-  wasd-controls="acceleration: 300"
-  look-controls="pointerLockEnabled: true"
-  ></a-camera>
-  <a-sphere
-  position="-10 4 -10"
-  radius="4" 
+  <a-entity camera look-controls wasd-controls position="0 1.6 0">
+    <!-- Dribbling Ball -->
+    <a-sphere 
+  position="0 -0.5 -1"
+  radius="0.1"
   color="orange"
-	animation="property: position; 
-	to: -10 15 -10; 
-	dir: alternate; 
-	dur: 250; 
-	easing: easeOutQuad; 
-	loop: true"
-  ></a-sphere>
-  ></a-entity>
+  animation="property: position; dir: alternate; dur: 400; easing: easeInOutSine; loop: true; to: 0 -0.7 -1">
+</a-sphere>
+
+  </a-entity>
   
+
 <a-entity id="jumbotron" position="0 120 0" rotation="0 0 0"animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"
 >
     <a-box
