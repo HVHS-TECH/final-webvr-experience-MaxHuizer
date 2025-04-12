@@ -9,6 +9,11 @@
   </head>
     <body>
     <a-scene> 
+
+      <a-light type="directional" position="0 100 0" intensity="1"></a-light>
+      <a-light type="ambient" color="#BBB"></a-light>
+      
+
     <a-plane
     position="0 0 0"
     rotation="-90 0 0"
@@ -35,11 +40,11 @@
       ></a-entity>
       
       <a-sphere
-  position="45 22 -70"
+  position="-115 56 -150"
   radius="4" 
   color="orange"
 	animation="property: position; 
-	to: 45 22 -70; 
+	to: -115 65 -150; 
 	dir: alternate; 
 	dur: 250; 
 	easing: easeOutQuad; 
